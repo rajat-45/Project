@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #17a2b8;
+    height: 100vh;
+  }
+  #token .container #token-row #token-column #token-box {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 220px;
+    border: 1px solid #9C9C9C;
+    background-color: #EAEAEA;
+  }
+  #token .container #token-row #token-column #token-box #token-form {
+    padding: 20px;
+  }
+  #token .container #token-row #token-column #token-box #token-form #register-link {
+    margin-top: -85px;
+  }

@@ -1,0 +1,14 @@
+
+<body>
+  
+    <div class="container">
+        <h1> FinApp  QRCODE GENERATOR</h1>
+        <input [(ngModel)]="value">
+        <ngx-qrcode
+           [elementType]="elementType"
+           [errorCorrectionLevel]="correctionLevel"
+           [value]="value"
+           cssClass="coolQRCode"></ngx-qrcode>
+     </div>
+    </body>
+    

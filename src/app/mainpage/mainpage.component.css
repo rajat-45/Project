@@ -1,0 +1,23 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .example-card {
+    max-width: 1600px;
+    margin: right 10px;
+  }
+  .example-container {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #555;
+  }
+  mat-grid-tile {
+    background: #555;
+  }
+  .bottom{
+      position: absolute;
+      bottom: 0px;
+      width: 1600px;
+      border:3px solid ;
+  }
+  

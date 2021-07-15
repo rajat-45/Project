@@ -1,0 +1,31 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<body>
+    <h1 class="text-center text-white pt-5">FinApp Authenticate</h1>
+    <div id="token">
+        <!-- <h2 class="text-center text-white pt-5">Authenticate</h2> -->
+        <div class="container">
+            <div id="token-row" class="row justify-content-center align-items-center">
+                <div id="token-column" class="col-md-6">
+                    <div id="token-box" class="col-md-12">
+                        <form #tokenform='ngForm' class="form" (ngSubmit)="onSubmit(tokenform.value)">
+                            <h3 class="text-center text-info">Please enter OTP</h3>
+                            
+                            <div class="form-group">
+                                <label for="password" class="text-info">Token:</label><br>
+                                <input type="password" name="token" id="token" ngModel class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                               
+                                <input type="submit" name="Authenticate" class="btn btn-info btn-md" value="Authenticate">
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
