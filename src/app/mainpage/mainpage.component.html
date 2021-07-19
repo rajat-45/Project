@@ -1,79 +1,76 @@
-<div>
+<div class="container">
     <div>
-<mat-toolbar color="#17a2b8">
-    <button mat-icon-button class="example-icon" >
-    </button> &nbsp;&nbsp;
-    <span>Fin App</span>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>&nbsp;&nbsp;&nbsp;
-    <mat-icon matBadge="1" matBadgeColor="warn">Notifications</mat-icon>
-  </mat-toolbar>
-</div>
+      <mat-toolbar color="#17a2b8">
+        <button mat-icon-button class="example-icon" ></button> &nbsp;&nbsp;
+        <span>Fin App</span>
+        <span class="example-spacer"></span>
+        <mat-icon matBadge="1" matBadgeColor="warn">Notifications</mat-icon>  &nbsp;&nbsp;&nbsp;
+        <button mat-raised-button color="accent" (click)="logout()">Logout</button>
+      </mat-toolbar>
+    </div>
 
 <!-- <div>
-    <mat-drawer-container class="example-container">
+      <mat-drawer-container class="example-container">
         <mat-drawer mode="side" closed>Drawer content</mat-drawer>
         <mat-drawer-content>Main content</mat-drawer-content>
       </mat-drawer-container>
-</div> -->
+    </div> -->
 
-<div>
-    <mat-card class="example-card">
-        <mat-card-content>Total Balance </mat-card-content>
-        <mat-card-title>{{totalBalance}}</mat-card-title>
-    <br/>
-    <br/>
-    <mat-divider></mat-divider>
-    <br/>
-    <br/>
-        <section>
-          <div class="example-label">   </div>
-          <div class="example-button-row">
-            <button mat-raised-button color="warn" (click)="send()">Send</button> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
-            <button mat-raised-button color="primary">Withdraw</button>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
-            <button mat-raised-button color="accent">Card</button>&nbsp;
-          </div></section>
+    <div>
+      <mat-card class="example-card">
+          <mat-card-content>Total Balance </mat-card-content>
+          <mat-card-title>{{totalBalance}}</mat-card-title>
+          <br/>
+          <br/>
+          <mat-divider></mat-divider>
+          <br/>
+          <br/>
+              <section>
+                <div class="example-label">   </div>
+                <div class="example-button-row">
+                  <button mat-raised-button color="warn" (click)="send()">Send</button> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                  <button mat-raised-button color="primary">Withdraw</button>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                  <button mat-raised-button color="accent">Card</button>&nbsp;
+                </div></section>
 
-    </mat-card>
-</div>
+      </mat-card>
+    </div>
 
-<div>
-    <mat-grid-list cols="2" rowHeight="6:1">
-        <mat-grid-tile> <h1 style="color: aliceblue;"> Income:</h1>&nbsp;&nbsp;&nbsp;
-            <h1 style="color: aliceblue;"> {{income}}</h1>   </mat-grid-tile>
-        <mat-grid-tile> <h1 style="color: aliceblue;"> Expense:</h1>&nbsp;&nbsp;&nbsp;
-            <h1 style="color: aliceblue;">{{expense}}</h1></mat-grid-tile>
-        <mat-grid-tile> <h1 style="color: aliceblue;"> Total Bill:</h1>&nbsp;&nbsp;&nbsp;
-        <h1 style="color: aliceblue;"> {{totalBill}}</h1></mat-grid-tile>
-        <mat-grid-tile> <h1 style="color: aliceblue;"> Saving:</h1>&nbsp;&nbsp;&nbsp;
-            <h1 style="color: aliceblue;"> {{saving}}</h1></mat-grid-tile>
-      </mat-grid-list>
-</div>
+    <div>
+        <mat-grid-list cols="2" rowHeight="6:1">
+            <mat-grid-tile> <h1 style="color: aliceblue;"> Income:</h1>&nbsp;&nbsp;&nbsp;
+                <h1 style="color: aliceblue;"> {{income}}</h1>   </mat-grid-tile>
+            <mat-grid-tile> <h1 style="color: aliceblue;"> Expense:</h1>&nbsp;&nbsp;&nbsp;
+                <h1 style="color: aliceblue;">{{expense}}</h1></mat-grid-tile>
+            <mat-grid-tile> <h1 style="color: aliceblue;"> Total Bill:</h1>&nbsp;&nbsp;&nbsp;
+            <h1 style="color: aliceblue;"> {{totalBill}}</h1></mat-grid-tile>
+            <mat-grid-tile> <h1 style="color: aliceblue;"> Saving:</h1>&nbsp;&nbsp;&nbsp;
+                <h1 style="color: aliceblue;"> {{saving}}</h1></mat-grid-tile>
+          </mat-grid-list>
+    </div>
 
 
 
-<div class="bottom">
-    <div style="color: gray;" ><h1 style="color: black;"> Transaction</h1></div>
-    <mat-card class="example-card">
-        <button mat-icon-button >
-            <mat-icon>more_vert</mat-icon>
-          </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button mat-icon-button color="primary" >
-            <mat-icon>home</mat-icon>
-          </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button mat-icon-button color="accent" >
-            <mat-icon>settings</mat-icon>
-          </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button mat-icon-button color="warn" >
-            <mat-icon>Overview</mat-icon>
-          </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button mat-icon-button disabled >
-            <mat-icon>open_in_new</mat-icon>
-          </button>
-        
-    </mat-card>
-</div>
+    <div class="bottom">
+        <div style="color: gray;" ><h1 style="color: black;"> Transaction</h1></div>
+        <mat-card class="example-card">
+            <button mat-icon-button >
+                <mat-icon>more_vert</mat-icon>
+              </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button mat-icon-button color="primary" >
+                <mat-icon>home</mat-icon>
+              </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button mat-icon-button color="accent" >
+                <mat-icon>settings</mat-icon>
+              </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button mat-icon-button color="warn" >
+                <mat-icon>Overview</mat-icon>
+              </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button mat-icon-button disabled >
+                <mat-icon>open_in_new</mat-icon>
+              </button>
+            
+        </mat-card>
+    </div>
 
 </div>

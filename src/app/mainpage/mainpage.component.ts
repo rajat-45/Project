@@ -21,6 +21,11 @@ export class MainpageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  logout(){
+    localStorage.removeItem('user');
+    this.route.navigate(['login']);
+  }
+
   send(){
     this.route.navigate(['send']);
   }

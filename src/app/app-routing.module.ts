@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { AuthGuard } from './auth.guard';
 import { LoginComponent } from './login/login.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { QRCodeComponent } from './qrcode/qrcode.component';
@@ -11,7 +12,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'token',component:TokenComponent},
   {path:'home',component:QRCodeComponent},
-  {path:'main',component:MainpageComponent},
+  {path:'main',component:MainpageComponent,canActivate:[AuthGuard]},
   {path:'send',component:SendComponent},
 
   {path:'',redirectTo:'/home',pathMatch:'full'},

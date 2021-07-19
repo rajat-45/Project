@@ -16,7 +16,7 @@ export class QRCodeComponent implements OnInit {
   deviceInfo : any;
   elementType = NgxQrcodeElementTypes.URL;
   correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
-  value = 'http://10.0.0.4:4200/home';
+  value = 'http://localhost:4200/home';
 
   constructor(private deviceService: DeviceDetectorService, private router: Router){
     this.epicFunction();
